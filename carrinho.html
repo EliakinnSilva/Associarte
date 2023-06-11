@@ -21,6 +21,14 @@
       font-size: 32px;
       margin: 0;
     }
+
+    nav {
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 20px;
+      text-align: center;
+      transform-style: initial;
+    }
     
     nav ul {
       list-style-type: none;
@@ -52,6 +60,38 @@
       padding: 20px;
       text-align: center;
     }
+    
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .container > div {
+      width: 300px;
+      margin: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      text-align: center;
+    }
+    
+    .container > div img {
+      width: 100%;
+      height: auto;
+    }
+    
+    .container > div h3, .container > div p {
+      margin: 10px 0;
+    }
+    
+    .container > div button {
+      background-color: #38220f;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      text-align: center;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
@@ -62,39 +102,40 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="cursos.html">Cursos</a></li>
-        <li><a href="lojinha.html">Lojinha </a></li>
+        <li><a href="lojinha.html">Lojinha</a></li>
         <li><a href="carrinho.html">Carrinho de Compras</a></li>
         <li><a href="contato.html">Contato</a></li>
       </ul>
     </nav>
   </header>
   
-     <!-- Página Lojinha Virtual -->
+  <!-- Página Carrinho -->
   <section class="lojinha">
     <h2>Carrinho</h2>
     
-    <!--  conteúdo da Lojinha Virtual -->
+    <!-- Conteúdo do Carrinho -->
     <div class="container">
-        <div>
-          <img src="img/cascadecaja01.jpeg">
-          <h3>Escultura em Casca de Cajá</h3>
-          <p>Escultura feita em casca da alvore do Cajá.</p>
-           <div><button class="saiba">Comprar</button></div>
-        </div>
-        <div>
-            <img src="img/cascadecaja02.jpg">
-            <h3>Escultura em Casca de Cajá</h3>
-            <p>Escultura feita em casca da alvore do Cajá.</p>
-             <div><button class="saiba">Comprar</button></div>
-          </div>
-          <div>
-            <img src="img/bag01.png">
-            <h3>Ecobag em algodão</h3>
-            <p>Ecobag em algodão ,estampada com xilogravuras</p>
-             <div><button class="saiba">Comprar</button></div>
-          </div>
-   
-
+      <div>
+        <img src="img/cascadecaja01.jpeg">
+        <h3>Escultura em Casca de Cajá</h3>
+        <p>Escultura feita em casca da árvore do Cajá.</p>
+        <div><button class="saiba">Comprar</button></div>
+      </div>
+      <div>
+        <img src="img/cascadecaja02.jpg">
+        <h3>Escultura em Casca de Cajá</h3>
+        <p>Escultura feita em casca da árvore do Cajá.</p>
+        <div><button class="saiba">Comprar</button></div>
+      </div>
+      <div>
+        <img src="img/bag01.png">
+        <h3>Ecobag em algodão</h3>
+        <p>Ecobag em algodão, estampada com xilogravuras.</p>
+        <div><button class="saiba">Comprar</button></div>
+      </div>
+    </div>
+  </section>
+  
   <!-- Rodapé -->
   <footer>
     &copy; 2023 Enoque's Loja de Artes e Artesanatos. Todos os direitos reservados.

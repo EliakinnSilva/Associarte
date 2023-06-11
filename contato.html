@@ -52,30 +52,46 @@
       padding: 20px;
       text-align: center;
     }
-    footer2{
-        background-color: #38220f;
+    
+    footer2 {
+      background-color: #38220f;
       color: black;
       padding: 20px;
       text-align: center;
       text-shadow: #38220f;
     } 
-    }
-
-   body.section.loja {
-    background-color: #38220f;
-      color: #fff;
-      padding: 20px;
+    
+    .apr-bloco04 {
       text-align: center;
     }
     
+    .campo {
+      margin-bottom: 10px;
+      padding: 5px;
+      width: 200px;
+    }
+    
+    .area {
+      margin-bottom: 10px;
+      padding: 5px;
+      width: 200px;
+      height: 100px;
+    }
+    
+    .enviar {
+      padding: 5px 10px;
+      background-color: #38220f;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
   </style>
+  
 </head>
 <body>
   <!-- Cabeçalho -->
   <header>
-   
-    <h1>Enoque's Artesanatos </h1>
-
+    <h1>Enoque's Artesanatos</h1>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -87,30 +103,27 @@
     </nav>
   </header>
   
-  <!-- Página Home -->
+  <!-- Página Contato -->
   <section>
-    <h2>Deixe Sua Mensagem !</h2>
+    <h2>Deixe Sua Mensagem!</h2>
     <p>Em breve lhe responderemos</p>
-    <!-- Adicione aqui o conteúdo da sua página Home -->
+    
+    <div class="apr-bloco04">
+      <form onsubmit="exibirPopup(); return false;">
+        <input type="text" name="Nome" placeholder="Nome" class="campo">
+        <br>
+        <input type="mail" name="E-mail" placeholder="Email" class="campo">
+        <br>
+        <textarea class="area" placeholder="Mensagem"></textarea>
+        <br>
+        <input type="submit" name="enviar" value="Enviar" class="enviar">
+      </form>
+    </div>
   </section>
   
-    </section>
-    <div class="apr-bloco04">
-        <form>
-          <div class="Formulario">
-            <input type="text" name="Nome" placeholder="Nome" class="campo">
-            <input type="mail" name="E-mail" placeholder="email" class="campo">
-            <textarea class="area"placeholder="Mensagem"></textarea>
-            <input type="submit" name="enviar" value="enviar"  class="enviar">
-            
-          </div>
-        </form>
-        
-      </div>
   <!-- Rodapé -->
-  <footer>
+  <footer class="footer2">
     &copy; 2023 Enoque's Loja de Artes e Artesanatos. Todos os direitos reservados.
-   
   </footer>
 </body>
 </html>

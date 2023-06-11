@@ -4,7 +4,7 @@
   <title>Enoque's Artes</title>
   <style>
     body {
-      background-color: #f2e6d9;
+      background-color: #c0650494;
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
@@ -21,6 +21,13 @@
       font-size: 32px;
       margin: 0;
     }
+    nav {
+     background-repeat: no-repeat;
+     background-size: cover;
+      padding: 20px;
+      text-align: center;
+      transform-style: initial;
+    }
     
     nav ul {
       list-style-type: none;
@@ -35,15 +42,50 @@
     }
     
     nav ul li a {
-      color: #fff;
+      color: #ffffff;
       text-decoration: none;
-      font-size: 16px;
+      font-size: 19px;
+      text-shadow: #38220f;
     }
     
     section {
       background-color: #fff;
-      margin: 20px;
-      padding: 20px;
+      margin: 10px;
+      padding: 0;
+      align-items: center;
+    }
+    
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-gap: 20px;
+    }
+    
+    .card {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+    
+    .card img {
+      width: 100%;
+    }
+    
+    .card h3 {
+      margin-top: 10px;
+    }
+    
+    .card p {
+      margin-bottom: 10px;
+    }
+    
+    .card button {
+      background-color: #38220f;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
     }
     
     footer {
@@ -52,35 +94,17 @@
       padding: 20px;
       text-align: center;
     }
-    footer2{
-        background-color: #38220f;
-      color: black;
-      padding: 20px;
-      text-align: center;
-      text-shadow: #38220f;
-    } 
-    }
-
-   body.section.loja {
-    background-color: #38220f;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-    
   </style>
 </head>
 <body>
   <!-- Cabeçalho -->
   <header>
-   
-    <h1>Enoque's Artesanatos </h1>
-
+    <h1>Enoque's Artesanatos</h1>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="cursos.html">Cursos</a></li>
-        <li><a href="lojinha.html">Lojinha </a></li>
+        <li><a href="lojinha.html">Lojinha</a></li>
         <li><a href="carrinho.html">Carrinho de Compras</a></li>
         <li><a href="contato.html">Contato</a></li>
       </ul>
@@ -91,54 +115,77 @@
   <section>
     <h2>Bem-vindo à nossa loja!</h2>
     <p>Nossa loja existe fisicamente desde 1982 e está localizada no Sítio Histórico da cidade de Olinda, Pernambuco, Brasil. Foi fundada pelo meu pai, Sr. Enoque. Vendemos diversos tipos de artesanatos.</p>
-    <!-- Adicione aqui o conteúdo da sua página Home -->
   </section>
- 
-  <footer2>
-  <div class="lojinha">
-    <div>
-        <img src="img/banerhome.jpg">
-        <h3>Escultura em Casca de Cajá</h3>
-        <p>Escultura feita em casca da alvore do Cajá.</p>
-         <div><button class="saiba">Comprar</button></div>
-      </div>
-    <div>
-      <img src="img/cascadecaja01.jpeg">
-      <h3>Escultura em Casca de Cajá</h3>
-      <p>Escultura feita em casca da alvore do Cajá.</p>
-       <div><button class="saiba">Comprar</button></div>
+  
+  <section class="grid">
+    <div class="card">
+      <img src="img/banerhome.jpg" width="500">
+      <h3>"Descubra a Beleza Única dos Nossos Artesanatos Feitos à Mão"</h3>
+      <p>Se você está em busca de itens exclusivos e cheios de charme, você veio ao lugar certo! Na Enoque's Artesanatos,
+         valorizamos a beleza única e a autenticidade dos produtos feitos à mão.
+          Nesta postagem, vamos mergulhar no encanto dos nossos artesanatos e explorar os detalhes artísticos 
+          que tornam cada peça especial. Desde joias artesanais a decorações para casa, 
+          temos uma variedade incrível de produtos para atender a todos os gostos. 
+          Venha conosco nessa jornada de descoberta e deixe-se encantar pela magia dos 
+          nossos artesanatos feitos com amor e dedicação.</p>
+      <div><button class="saiba">Saiba Mais</button></div>
     </div>
-    <div>
-        <img src="img/cascadecaja02.jpg">
-        <h3>Escultura em Casca de Cajá</h3>
-        <p>Escultura feita em casca da alvore do Cajá.</p>
-         <div><button class="saiba">Comprar</button></div>
-      </div>
-      <div>
-        <img src="img/bag01.png">
-        <h3>Ecobag em algodão</h3>
-        <p>Ecobag em algodão ,estampada com xilogravuras</p>
-         <div><button class="saiba">Comprar</button></div>
-      </div>
-    </section>
-    <section>
-      <div class="apr-bloco04">
-        <form>
-          <div class="Formulario">
-            <input type="text" name="Nome" placeholder="Nome" class="campo">
-            <input type="mail" name="E-mail" placeholder="email" class="campo">
-            <textarea class="area"placeholder="Mensagem"></textarea>
-            <input type="submit" name="enviar" value="enviar"  class="enviar">
-            
-          </div>
-        </form>
-        
-      </div>
-    </section>
+    
+    <div class="card">
+      <img src="img/artesao01.jpg" width="500">
+      <h3>"Inspire-se com as Histórias por Trás dos Nossos Artesanatos"</h3>
+      <p>Na Enoque's Artesanatos, acreditamos que cada peça carrega consigo uma história única. 
+        Nesta postagem, vamos mergulhar nas histórias fascinantes por trás dos nossos artesanatos.
+         Desde as técnicas tradicionais utilizadas pelos nossos artesãos até as inspirações por trás de cada criação, 
+         você descobrirá como cada produto é resultado de habilidades artísticas e culturas diversas.
+          Queremos compartilhar essas histórias para que você possa se conectar com o processo criativo 
+          e apreciar ainda mais a beleza dos nossos artesanatos.
+         Venha conhecer as histórias que dão vida às nossas peças e inspire-se conosco!</p>
+      <div><button class="saiba">Saiba Mais</button></div>
+    </div>
+    
+    <div class="card">
+      <img src="img/cascadecaja02.jpg" width="500">
+      <h3> "Artesanatos Personalizados: Faça uma Peça Única para Você ou Presenteie com Sentimento"</h3>
+      <p>Na Enoque's Artesanatos, valorizamos a individualidade e a expressão pessoal. 
+        É por isso que oferecemos a opção de personalização em muitos dos nossos produtos artesanais. 
+        Seja para celebrar uma ocasião especial, eternizar um momento importante ou simplesmente mostrar seu estilo único,
+         nossos artesanatos personalizados são a maneira perfeita de expressar sua individualidade. 
+         Junte-se a nós nesta jornada de criação e descubra como
+         nossos produtos personalizados podem agregar um toque especial à sua vida.</p>
+      <div><button class="saiba">Saiba Mais</button></div>
+    </div>
+    
+    <div class="card">
+      <img src="img/bag01.png" width="500">
+      <h3> "Dicas de Decoração: Transforme seu Espaço com os Artesanatos da Enoque's"</h3>
+      <p>Quer dar um toque especial à sua casa ou ambiente de trabalho?
+         Os artesanatos da Enoque's são a escolha perfeita para transformar qualquer espaço em um lugar acolhedor
+          e cheio de personalidade. Nesta postagem, compartilhamos dicas exclusivas de decoração para você explorar
+           o potencial dos nossos produtos. Desde almofadas e tapetes artesanais até esculturas e pinturas únicas,
+            vamos mostrar como essas peças podem se tornar o destaque da sua decoração. Acompanhe-nos e descubra 
+            como adicionar o charme dos artesanatos da Enoque's em seu lar,
+         criando ambientes que refletem a sua essência e estilo.</p>
+      <div><button class="saiba">Saiba Mais</button></div>
+    </div>
+  </section>
+  
+  <section>
+    <div class="apr-bloco04">
+      <form>
+        <div class="Formulario">
+          <input type="text" name="Nome" placeholder="Nome" class="campo">
+          <input type="mail" name="E-mail" placeholder="email" class="campo">
+          <textarea class="area" placeholder="Mensagem"></textarea>
+          <input type="submit" name="enviar" value="enviar" class="enviar">
+        </div>
+      </form>
+    </div>
+  </section>
+  
   <!-- Rodapé -->
   <footer>
     &copy; 2023 Enoque's Loja de Artes e Artesanatos. Todos os direitos reservados.
-   
   </footer>
 </body>
 </html>
