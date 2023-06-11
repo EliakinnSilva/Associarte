@@ -1,0 +1,59 @@
+/* section lojinha*/
+.lojinha {
+	background: #38220f;
+	padding-top: 50px;
+}
+.container {
+	margin: 0 10%;
+	text-align: center;
+}
+/**/
+header2 {
+    padding: auto;
+    margin: 0;
+}
+/*Formulario*/
+div.apr-bloco04 div.formulario {
+	display: inline-block;
+	width: 49%%;
+	text-align: left;
+	margin: 0 0.4%;
+}
+
+input.campo{
+	width: 98%;
+	padding: 1%;
+	margin: 5px;
+	height: 20px;
+	border-radius: 5px;
+	background: #bfdeff;
+	border: 0;
+}
+
+input.campo::placeholder{
+	font-family: calibri;
+	font-weight: 500;
+	color: #506f8f;
+	font-size: 16px;
+}
+
+textarea.area{
+	width: 98%;
+	height: 98px;
+	padding: 1%;
+	margin: 5px;
+	border-radius: 5px;
+	background: #bfdeff;
+	border: 0;
+}
+
+input.enviar {
+	background: #72130d;
+	color: #fff;
+	border: 0;
+	font-size: 16px;
+	padding: 7px 12px;
+	border-radius: 7px;
+	cursor: pointer;
+	margin-top: 49px;
+}
