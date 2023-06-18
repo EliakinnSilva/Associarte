@@ -11,8 +11,7 @@ body {
 	text-align: center;
   }
  
-    
-   
+       
     h1 {
       color: #fff;
       font-size: 32px;
@@ -51,3 +50,114 @@ body {
       text-align: center;
     }
  
+
+    <style>
+    body {
+      background-color: #c0650494;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    header {
+      background-color: #38220f;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    h1 {
+      color: #fff;
+      font-size: 32px;
+      margin: 0;
+    }
+    
+    nav {
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 20px;
+      text-align: center;
+      transform-style: initial;
+    }
+    
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      transition: background-color 0.3s ease-in-out;
+    }
+    
+    nav ul li {
+      display: inline-block;
+      margin-right: 10px;
+      transition: background-color 0.3s ease-in-out;
+    }
+    
+    nav ul li a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 19px;
+      text-shadow: #38220f;
+      transition: color 0.3s ease-in-out;
+    }
+    
+    nav ul li:hover {
+      background-color: #6d4c2f;
+    }
+    
+    nav ul li a:hover {
+      color: #fff;
+    }
+    
+    section {
+      background-color: #fff;
+      margin: 10px;
+      padding: 0;
+      align-items: center;
+    }
+    
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-gap: 20px;
+    }
+    
+    .card {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center; 
+      position: relative;
+      overflow: hidden;
+    
+  }
+
+  .card img {
+    transition: transform 0.3s;
+  }
+  .card:hover img {
+    transform: scale(1.1);
+  }
+    .card h3 {
+      margin-top: 10px;
+    }
+    
+    .card p {
+      margin-bottom: 10px;
+    }
+    
+    .card button {
+      background-color: #38220f;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    
+    footer {
+      background-color: #38220f;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
