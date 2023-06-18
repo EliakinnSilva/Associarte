@@ -21,9 +21,10 @@
       font-size: 32px;
       margin: 0;
     }
+    
     nav {
-     background-repeat: no-repeat;
-     background-size: cover;
+      background-repeat: no-repeat;
+      background-size: cover;
       padding: 20px;
       text-align: center;
       transform-style: initial;
@@ -34,11 +35,13 @@
       margin: 0;
       padding: 0;
       text-align: center;
+      transition: background-color 0.3s ease-in-out;
     }
     
     nav ul li {
       display: inline-block;
       margin-right: 10px;
+      transition: background-color 0.3s ease-in-out;
     }
     
     nav ul li a {
@@ -46,6 +49,15 @@
       text-decoration: none;
       font-size: 19px;
       text-shadow: #38220f;
+      transition: color 0.3s ease-in-out;
+    }
+    
+    nav ul li:hover {
+      background-color: #6d4c2f;
+    }
+    
+    nav ul li a:hover {
+      color: #fff;
     }
     
     section {
@@ -64,13 +76,18 @@
     .card {
       border: 1px solid #ccc;
       padding: 10px;
-      text-align: center;
-    }
+      text-align: center; 
+      position: relative;
+      overflow: hidden;
     
-    .card img {
-      width: 100%;
-    }
-    
+  }
+
+  .card img {
+    transition: transform 0.3s;
+  }
+  .card:hover img {
+    transform: scale(1.1);
+  }
     .card h3 {
       margin-top: 10px;
     }
@@ -95,6 +112,7 @@
       text-align: center;
     }
   </style>
+
 </head>
 <body>
   <!-- Cabeçalho -->
@@ -105,10 +123,11 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="cursos.html">Cursos</a></li>
         <li><a href="lojinha.html">Lojinha</a></li>
-        <li><a href="carrinho.html">Carrinho de Compras</a></li>
+        <!--<li><a href="carrinho.html">Carrinho de Compras</a></li>*/-->
         <li><a href="contato.html">Contato</a></li>
       </ul>
     </nav>
+    
   </header>
   
   <!-- Página Home -->
@@ -119,7 +138,7 @@
   
   <section class="grid">
     <div class="card">
-      <img src="img/banerhome.jpg" width="500">
+      <img src="img/banerhome.jpg" width="400">
       <h3>"Descubra a Beleza Única dos Nossos Artesanatos Feitos à Mão"</h3>
       <p>Se você está em busca de itens exclusivos e cheios de charme, você veio ao lugar certo! Na Enoque's Artesanatos,
          valorizamos a beleza única e a autenticidade dos produtos feitos à mão.
@@ -128,11 +147,11 @@
           temos uma variedade incrível de produtos para atender a todos os gostos. 
           Venha conosco nessa jornada de descoberta e deixe-se encantar pela magia dos 
           nossos artesanatos feitos com amor e dedicação.</p>
-      <div><button class="saiba">Saiba Mais</button></div>
+      <div><button  class="saiba">Saiba Mais</button></div>
     </div>
     
     <div class="card">
-      <img src="img/artesao01.jpg" width="500">
+      <img src="img/artesao01.jpg" width="300">
       <h3>"Inspire-se com as Histórias por Trás dos Nossos Artesanatos"</h3>
       <p>Na Enoque's Artesanatos, acreditamos que cada peça carrega consigo uma história única. 
         Nesta postagem, vamos mergulhar nas histórias fascinantes por trás dos nossos artesanatos.
@@ -145,7 +164,7 @@
     </div>
     
     <div class="card">
-      <img src="img/cliente01.jpg" width="500">
+      <img src="img/cliente01.jpg" width="350">
       <h3> "Artesanatos Personalizados: Faça uma Peça Única para Você ou Presenteie com Sentimento"</h3>
       <p>Na Enoque's Artesanatos, valorizamos a individualidade e a expressão pessoal. 
         É por isso que oferecemos a opção de personalização em muitos dos nossos produtos artesanais. 
@@ -167,6 +186,11 @@
             como adicionar o charme dos artesanatos da Enoque's em seu lar,
          criando ambientes que refletem a sua essência e estilo.</p>
       <div><button class="saiba">Saiba Mais</button></div>
+    </div>
+    <div class="card">
+      <iframe src="img/vtloja.mp4" alt="loja" aria-autocomplete="inline" >
+        <h4>PASSEIO PELA LOJA</h4>
+        <div><button class="saiba">Saiba Mais</button></div>
     </div>
   </section>
   

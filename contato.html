@@ -4,7 +4,7 @@
   <title>Enoque's Artes</title>
   <style>
     body {
-      background-color: #f2e6d9;
+      background-color: #c0650494;
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
@@ -22,16 +22,26 @@
       margin: 0;
     }
     
+    nav {
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 20px;
+      text-align: center;
+      transform-style: initial;
+    }
+    
     nav ul {
       list-style-type: none;
       margin: 0;
       padding: 0;
       text-align: center;
+      transition: background-color 0.3s ease-in-out;
     }
     
     nav ul li {
       display: inline-block;
       margin-right: 10px;
+      transition: background-color 0.3s ease-in-out;
     }
     
     nav ul li a {
@@ -39,6 +49,15 @@
       text-decoration: none;
       font-size: 19px;
       text-shadow: #38220f;
+      transition: color 0.3s ease-in-out;
+    }
+    
+    nav ul li:hover {
+      background-color: #6d4c2f;
+    }
+    
+    nav ul li a:hover {
+      color: #fff;
     }
     
     section {
@@ -98,7 +117,7 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="cursos.html">Cursos</a></li>
         <li><a href="lojinha.html">Lojinha </a></li>
-        <li><a href="carrinho.html">Carrinho de Compras</a></li>
+        <!--<li><a href="carrinho.html">Carrinho de Compras</a></li>*/-->
         <li><a href="contato.html">Contato</a></li>
       </ul>
     </nav>
