@@ -1,194 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
+
 <head>
-  <title>Enoque's Artes</title>
-  <style>
-    body {
-      background-color: #c0650494;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    
-    header {
-      background-color: #38220f;
-      padding: 20px;
-      text-align: center;
-    }
-    
-    h1 {
-      color: #fff;
-      font-size: 32px;
-      margin: 0;
-    }
-    
-    nav {
-      background-repeat: no-repeat;
-      background-size: cover;
-      padding: 20px;
-      text-align: center;
-      transform-style: initial;
-    }
-    
-    nav ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-      transition: background-color 0.3s ease-in-out;
-    }
-    
-    nav ul li {
-      display: inline-block;
-      margin-right: 10px;
-      transition: background-color 0.3s ease-in-out;
-    }
-    
-    nav ul li a {
-      color: #ffffff;
-      text-decoration: none;
-      font-size: 19px;
-      text-shadow: #38220f;
-      transition: color 0.3s ease-in-out;
-    }
-    
-    nav ul li:hover {
-      background-color: #6d4c2f;
-    }
-    
-    nav ul li a:hover {
-      color: #fff;
-    }
-    
-    section {
-      background-color: #fff;
-      margin: 20px;
-      padding: 20px;
-    }
-    
-    .container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      grid-gap: 20px;
-    }
-    
-    .container div {
-      border: 1px solid #000000;
-      padding: 10px;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      height: 100%;
-      transition: transform 0.3s ease;
-    }
-    
-    .container img {
-      width: 100%;
-      max-height: 200px;
-      object-fit: cover;
-      margin-bottom: 10px;
-      transition: transform 0.3s ease;
-    }
-    
-    .container div:hover {
-      transform: scale(1.05);
-    }
-    
-    .container div:hover img {
-      transform: scale(1.2);
-    }
-    
-    .container h3 {
-      margin-top: 10px;
-    }
-    
-    .container p {
-      margin-bottom: 10px;
-    }
-    
-    .container button {
-      background-color: #38220f;
-      color: #fff;
-      border: none;
-      padding: 10px 20px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-    
-    footer {
-      background-color: #38220f;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lojinha</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
+</head>
+
 <body>
-  <!-- Cabeçalho -->
   <header>
     <h1>Enoque's Artesanatos</h1>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="cursos.html">Cursos</a></li>
-        <li><a href="lojinha.html">Lojinha </a></li>
+        <li>
+          <a href="cursos.html">Cursos ▼</a>
+          <ul class="submenu">
+            <li><a href="amigurim.html">Curso Amigurim</a></li>
+            <li><a href="xilogravura.html">Xilogravura</a></li>
+            <li><a href="pinturaemteceido.html">Pintura em tecido</a></li>
+            <li><a href="tapecçaria.html">Tapeçaria</a></li>
+            <li><a href="ceramica.html">Cerâmica</a></li>
+          </ul>
+        </li>
+
+        <li><a href="lojinha.html">Lojinha</a></li>
         <!--<li><a href="carrinho.html">Carrinho de Compras</a></li>*/-->
         <li><a href="contato.html">Contato</a></li>
       </ul>
     </nav>
   </header>
-  
+
   <!-- Página Lojinha Virtual -->
   <section class="lojinha">
     <h2>Lojinha Virtual</h2>
-    
+
     <!--  conteúdo da Lojinha Virtual -->
     <div class="container">
       <div>
         <img src="img/cascadecaja01.jpeg">
         <h3>Escultura em Casca de Cajá</h3>
-        <p>Escultura feita em casca da árvore do Cajá <R1>R$19.90</R1></p>
+        <p>Escultura feita em casca da árvore do Cajá <R1>R$19.90</R1>
+        </p>
         <div><button class="saiba">Comprar</button></div>
       </div>
       <div>
         <img src="img/cascadecaja02.jpg">
         <h3>Escultura em Casca de Cajá</h3>
-        <p>Escultura feita em casca da árvore do Cajá <R1>R$19.90</R1></p>
+        <p>Escultura feita em casca da árvore do Cajá <R1>R$19.90</R1>
+        </p>
         <div><button class="saiba">Comprar</button></div>
       </div>
       <div>
         <img src="img/bag01.png">
         <h3>Ecobag em algodão</h3>
-        <p>Ecobag em algodão, estampada com xilogravuras <R1>R$49.90</R1></p>
+        <p>Ecobag em algodão, estampada com xilogravuras <R1>R$49.90</R1>
+        </p>
         <div><button class="saiba">Comprar</button></div>
       </div>
     </div>
     <br><br>
     <br><br>
-    
+
     <div class="container">
       <div>
         <img src="img/vestiodo01.jpg">
         <h3>Vestido 3 em 1</h3>
-        <p>Saia envelope, vestido tomara que caia ou saída de praia só <R1>R$79.90</R1></p>
+        <p>Saia envelope, vestido tomara que caia ou saída de praia só <R1>R$79.90</R1>
+        </p>
         <div><button class="saiba">Comprar</button></div>
       </div>
       <div>
         <img src="img/talha01.jpg">
         <h3>Talha casaris</h3>
-        <p>Casaris de Olinda entalhado em madeira de lei <R1>R$20.00</R1></p>
+        <p>Casaris de Olinda entalhado em madeira de lei <R1>R$20.00</R1>
+        </p>
         <div><button class="saiba">Comprar</button></div>
       </div>
       <div>
         <br><br>
         <img src="img/talh02.jpg">
         <h3>Talha</h3>
-        <p>Casaris de Olinda entalhado em madeira de lei <R1>R$20.00</R1></p>
+        <p>Casaris de Olinda entalhado em madeira de lei <R1>R$20.00</R1>
+        </p>
         <div><button class="saiba">Comprar</button></div>
       </div>
       <br>
-     
+
       <div>
         <img src="img/talha03.jpg">
         <h3>Talha</h3>
@@ -203,10 +104,11 @@
       </div>
     </div>
   </section>
-  
+
   <!-- Rodapé -->
   <footer>
     &copy; 2023 Enoque's Loja de Artes e Artesanatos. Todos os direitos reservados.
   </footer>
 </body>
+
 </html>

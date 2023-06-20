@@ -105,18 +105,57 @@
       border: none;
       cursor: pointer;
     }
+    /*responsividade*/
+@media (max-width: 768px) {
+  /* Estilos para telas menores, como tablets e smartphones */
+  nav {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}  
+ /* Estilos CSS para o submenu */
+ .submenu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+li:hover .submenu {
+  display: block;
+}
+
+.submenu li {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.submenu li a {
+  color: #000;
+  text-decoration: none;
+}
   </style>
   
 </head>
 <body>
-  <!-- Cabeçalho -->
   <header>
     <h1>Enoque's Artesanatos</h1>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="cursos.html">Cursos</a></li>
-        <li><a href="lojinha.html">Lojinha </a></li>
+        <li>
+           <a href="cursos.html">Cursos ▼</a>
+           <ul class="submenu">
+            <li><a href="amigurim.html">Curso Amigurim</a></li>
+            <li><a href="xilogravura.html">Xilogravura</a></li>
+            <li><a href="pinturaemteceido.html">Pintura em tecido</a></li>
+            <li><a href="tapecçaria.html">Tapeçaria</a></li>
+            <li><a href="ceramica.html">Cerâmica</a></li>
+          </ul>
+        </li>
+
+        <li><a href="lojinha.html">Lojinha</a></li>
         <!--<li><a href="carrinho.html">Carrinho de Compras</a></li>*/-->
         <li><a href="contato.html">Contato</a></li>
       </ul>
