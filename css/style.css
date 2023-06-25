@@ -17,6 +17,7 @@ h1 {
   margin: 0;
 }
 
+
 nav {
   background-repeat: no-repeat;
   background-size: cover;
@@ -80,8 +81,8 @@ section {
 }
 
 .container img {
-  width: 100%;
-  max-height: 200px;
+  width: 150;
+  max-height: 250;
   object-fit: cover;
   margin-bottom: 10px;
   transition: transform 0.3s ease;
@@ -111,7 +112,14 @@ section {
   font-size: 16px;
   cursor: pointer;
 }
-
+.container button2 {
+  background-color: #38220f;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
 /*cards container*/
 .container .card {
   display: flex;
@@ -161,6 +169,11 @@ section {
   font-size: 16px;
   cursor: pointer;
 }
+.container h4{
+  text-align: justify;
+  font-size: 15px;
+}
+
 footer {
   background-color: #38220f;
   color: #fff;
