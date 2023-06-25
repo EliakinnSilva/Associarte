@@ -88,7 +88,7 @@ section {
 }
 
 .container div:hover {
-  transform: scale(1.05);
+  transform: scale(1);
 }
 
 .container div:hover img {
