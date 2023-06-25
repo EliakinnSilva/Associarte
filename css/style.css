@@ -62,7 +62,7 @@ section {
   padding: 20px;
 }
 h3{
-  
+  text-align: center;
 }
 .container {
   display: grid;
@@ -100,13 +100,14 @@ h3{
 
 .container h3 {
   margin-top: 10px;
+  text-align: right;
 }
 
 .container p {
   margin-bottom: 10px;
 }
 
-.container button1 {
+.container button {
   background-color: #F90303;
   color: #fff;
   border: none;
@@ -176,6 +177,8 @@ h3{
   font-size: 15px;
 }
 
+
+
 footer {
   background-color: #38220f;
   color: #fff;
@@ -211,4 +214,10 @@ margin-bottom: 5px;
 .submenu li a {
 color: #000;
 text-decoration: none;
+}
+
+.lojinha{
+  display: flex;
+    align-items:center ;
+     margin-left:-9%;
 }
