@@ -202,6 +202,25 @@ nav {
   text-align: justify;
   font-size: 15px;
 }
+.container p{
+  text-align:right;
+  font-size: 15px;
+}
+/*Alinhamento dos testos ao lado das imagens*/
+.image-text {
+  display: flex;
+  align-items: center;
+}
+
+.image-text img {
+  margin-right: 20px;
+}
+
+.image-text .text {
+  flex-grow: 1;
+}
+
+
 /*stilos CSS para o container cards */
 .image-wrapper {
     display: inline-block;
