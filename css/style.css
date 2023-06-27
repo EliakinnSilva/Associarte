@@ -205,6 +205,38 @@ section {
   font-size: 15px;
 }
 
+
+  /* Estilizando as imagens */
+  .image-wrapper img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  /* Estilizando o efeito de hover */
+  .image-wrapper:hover::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Altere a cor de fundo do hover conforme necessário */
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  /* Altere o estilo do texto que aparece no hover conforme necessário */
+  .image-wrapper:hover::before {
+    content: "Texto do Hover";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 18px;
+  }
+
 /* Estilos CSS para o submenu */
 .submenu {
   display: none;
