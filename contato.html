@@ -1,65 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contato</title>
   <link rel="stylesheet" href="css/lojinha.css">
- </head>
-<body>
-  
 </head>
-<body>
-  <header>
-    <img src="img/logoenoques.jpg" alt="logo" >
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li>
-           <a href="cursos.html">Cursos ▼</a>
-           <ul class="submenu">
-            <li><a href="amigurim.html">Curso Amigurim</a></li>
-            <li><a href="xilogravura.html">Xilogravura</a></li>
-            <li><a href="pinturaemteceido.html">Pintura em tecido</a></li>
-            <li><a href="tapecçaria.html">Tapeçaria</a></li>
-            <li><a href="ceramica.html">Cerâmica</a></li>
-          </ul>
-        </li>
 
-        <li><a href="lojinha.html">Lojinha</a></li>
-        <!--<li><a href="carrinho.html">Carrinho de Compras</a></li>*/-->
-        <li><a href="contato.html">Contato</a></li>
+<body>
+
+  </head>
+
+  <body>
+    <header>
+      <img src="img/logoenoques.jpg" alt="logo">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a href="cursos.html">Cursos ▼</a>
+            <ul class="submenu">
+              <li><a href="amigurim.html">Curso Amigurim</a></li>
+              <li><a href="xilogravura.html">Xilogravura</a></li>
+              <li><a href="pinturaemteceido.html">Pintura em tecido</a></li>
+              <li><a href="tapecçaria.html">Tapeçaria</a></li>
+              <li><a href="ceramica.html">Cerâmica</a></li>
+            </ul>
+          </li>
+
+          <li><a href="lojinha.html">Lojinha</a></li>
+          <!--<li><a href="carrinho.html">Carrinho de Compras</a></li>*/-->
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Página Contato -->
+    <section>
+      <h2>Deixe Sua Mensagem!</h2>
+      <p>Em breve lhe responderemos</p>
+
+
+      <div class="apr-bloco04">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.8167505664974!2d-34.85470892567371!3d-8.017824180018778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab22a4a61494b5%3A0xf9b39af7ce73b59a!2sR.%20de%20S%C3%A3o%20Bento%2C%20170%20-%20Carmo%2C%20Olinda%20-%20PE%2C%2053020-080!5e0!3m2!1spt-BR!2sbr!4v1687826297505!5m2!1spt-BR!2sbr"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <form onsubmit="exibirPopup(); return false;">
+          <input type="text" name="Nome" placeholder="Nome" class="campo">
+          <br>
+          <input type="mail" name="E-mail" placeholder="Email" class="campo">
+          <br>
+          <textarea class="area" placeholder="Mensagem"></textarea>
+          <br>
+          <input type="submit" name="enviar" value="Enviar" class="enviar">
+          <script>
+            function exibirPopup() {
+              alert("Mensagem enviada com sucesso!");
+              location.reload();
+            }
+          </script>
+        </form>
+      </div>
+      <ul>
+        <li>Telefone: 81997096592</li>
+        <li>Endereço: Rua São Bento Nº 170 Varadouro Olinda</li>
+        <li>E-mail: <a href="mailto:eliakinnenoque@gmail.com">eliakinnenoque@gmail.com</a></li>
       </ul>
-    </nav>
-  </header>
-  
-  <!-- Página Contato -->
-  <section>
-    <h2>Deixe Sua Mensagem!</h2>
-    <p>Em breve lhe responderemos</p>
-    
-    <div class="apr-bloco04">
-      <form onsubmit="exibirPopup(); return false;">
-        <input type="text" name="Nome" placeholder="Nome" class="campo">
-        <br>
-        <input type="mail" name="E-mail" placeholder="Email" class="campo">
-        <br>
-        <textarea class="area" placeholder="Mensagem"></textarea>
-        <br>
-        <input type="submit" name="enviar" value="Enviar" class="enviar">
-        <script>
-          function exibirPopup() {
-            alert("Mensagem enviada com sucesso!");
-            location.reload();
-          }
-        </script>
-      </form>
-    </div>
-  </section>
-  
-  <!-- Rodapé -->
-  <footer class="footer2">
-    &copy; 2023 Enoque's Loja de Artes e Artesanatos. Todos os direitos reservados.
-  </footer>
-</body>
+      
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer2">
+      &copy; 2023 Enoque's Loja de Artes e Artesanatos. Todos os direitos reservados.
+    </footer>
+  </body>
+
 </html>
