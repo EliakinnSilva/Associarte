@@ -272,8 +272,53 @@ li:hover .submenu {
     color: #fff;
     font-size: 18px;
   }
+  
 
-
+  input.campo {
+    width: 98%;
+    padding: 1%;
+    margin: 5px;
+    height: 20px;
+    border-radius: 5px;
+    background: #bfdeff;
+    border: 0;
+  }
+  
+  input.campo::placeholder {
+    font-family: "calibri";
+    font-weight: 500;
+    color: #506f8f;
+    font-size: 16px;
+  }
+  
+  textarea.area {
+    width: 98%;
+    height: 90px;
+    padding: 1%;
+    margin: 5px;
+    border-radius: 5px;
+    background: #bfdeff;
+    border: 0;
+  }
+  
+  textarea.area::placeholder {
+    font-family: "calibri";
+    font-weight: 500;
+    color: #506f8f;
+    font-size: 16px;
+  }
+  
+  input.envia {
+    background: #72130d;
+    color: #fff;
+    border: 0;
+    font-size: 16px;
+    padding: 7px 12px;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-top: 49px;
+  }
+  
 
   /**/
   footer {
@@ -283,4 +328,3 @@ li:hover .submenu {
     text-align: center;
   }
   /**/
-
