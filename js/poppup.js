@@ -1,6 +1,6 @@
-posteriomente usarei
-    <script>
+<script>
     function exibirPopup() {
       alert("Mensagem enviada com sucesso!");
-          }
+      location.reload();
+    }
   </script>
